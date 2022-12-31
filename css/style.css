@@ -17,6 +17,11 @@ h1,h2{
     font-weight: normal;
 }
 
+.container{
+    width: 400px;
+    margin:0 auto;
+}
+
 /* header */
 header{
     background: #efefef;
@@ -86,8 +91,6 @@ main section + section{
     margin-top: 60px;
 }
 
-
-
 /* footer */
 
 footer{
@@ -96,3 +99,21 @@ footer{
     color: #aaa;
 }
 
+/* animation */
+.animate{
+    opacity: 0;
+    transition: opacity.3s,transform.3s;
+}
+
+.animate.slide-from-left{
+    transform: translateX(-40px);
+}
+
+.animate.slide-from-right{
+    transform: translateX(40px);
+}
+
+.animate.appear{
+    opacity:1;
+    transform:none;
+}
